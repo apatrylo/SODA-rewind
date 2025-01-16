@@ -1,0 +1,4 @@
+.autoplay-progress circle {
+    transition: stroke-dashoffset 0.3s linear;
+  }
+  
