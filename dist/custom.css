@@ -1,4 +1,19 @@
-.autoplay-progress circle {
-    transition: stroke-dashoffset 0.3s linear;
+/*---- Swiper Js pagination custom style  ----*/
+
+  /* Default bullet */
+.swiper-pagination-bullet {
+    background: rgb(230, 230, 230);
+    width: 9px;
+    height: 9px;
+    opacity: 0.5;
   }
+  
+  /* Active bullet */
+.swiper-pagination-bullet-active {
+    background: rgb(255, 255, 255);
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
   
