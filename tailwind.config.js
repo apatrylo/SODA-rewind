@@ -1,12 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  important: true, // Add !important to all Tailwind utilities
   content: [
-    "./src/**/*.{html,js}", // Adjust to match your folder structure
-    "./dist/**/*.{html,js}",
-    "./node_modules/flowbite/**/*.js"
+    "./src/**/*.{html,js}",  // All HTML and JS files in the `src` directory and subdirectories.
+    "./src/**/*.css",        // All CSS files in the `src` directory and subdirectories.
+    "./dist/**/*.{html,js}", // All HTML and JS files in the `dist` directory.
+    "./node_modules/flowbite/**/*.js", // Flowbite components.
   ],
 
-  darkMode: 'class', // Enable dark mode with the 'dark' class
+  darkMode: 'class',
 
   theme: {
     extend: {
@@ -26,43 +28,25 @@ module.exports = {
         }
       },
       fontFamily: {
+        // Override the default sans font
         sans: [
-          'Lato',
-          'ui-sans-serif',
+          'Nunito Sans',
           'system-ui',
           '-apple-system',
-          'Segoe UI',
-          'Roboto',
-          'Helvetica Neue',
-          'Arial',
-          'Noto Sans',
-          'sans-serif',
-          'Apple Color Emoji',
-          'Segoe UI Emoji',
-          'Segoe UI Symbol',
-          'Noto Color Emoji'
+          'sans-serif'
         ],
+        // Override the body font to match
         body: [
-          'Lato',
-          'ui-sans-serif',
+          'Nunito Sans',
           'system-ui',
           '-apple-system',
-          'Segoe UI',
-          'Roboto',
-          'Helvetica Neue',
-          'Arial',
-          'Noto Sans',
-          'sans-serif',
-          'Apple Color Emoji',
-          'Segoe UI Emoji',
-          'Segoe UI Symbol',
-          'Noto Color Emoji'
+          'sans-serif'
         ]
       }
     }
   },
 
   plugins: [
-    require('flowbite/plugin') // Added Flowbite plugin
+    require('flowbite/plugin')
   ],
 };
