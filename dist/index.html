@@ -1,115 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="output.css" rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-  </head>
-  <body>
-    <div class="antialiased bg-gray-50 dark:bg-gray-900">
-      <main class="p-4 md:ml-64 h-auto pt-20">
-        <div
-          class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4"
-        >
-          <!-- Swiper -->
-          <div class="swiper mySwiper relative">
-            <!-- Swiper Wrapper -->
-            <div class="swiper-wrapper">
-              <div
-                class="swiper-slide bg-primary-700 flex justify-center items-center text-primary-50 text-xl"
-              >
-                Slide 1
-              </div>
-              <div
-                class="swiper-slide bg-primary-600 flex justify-center items-center text-primary-50 text-xl"
-              >
-                Slide 2
-              </div>
-              <div
-                class="swiper-slide bg-primary-500 flex justify-center items-center text-primary-50 text-xl"
-              >
-                Slide 3
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="School of digital art straming platform">
+  <meta name="keywords" content="School of digital art straming platform">
+  <meta name="author" content="Andrii Patrylo">
+  <title>Your Page Title</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="custom.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <main class="antialiased bg-gray-200 dark:bg-gray-900">
+    <div class="p-4 md:ml-64 h-auto ">
+      <!-- Swiper -->
+      <div class="swiper mySwiper relative w-full h-96 rounded-lg overflow-hidden">
+        <!-- Swiper Wrapper -->
+        <div class="swiper-wrapper w-full h-full rounded-lg">
+        <!-- Slide 1 -->
+        <div class="swiper-slide bg-cover bg-center">
+          <div class="h-full bg-primary-900 rounded-lg grid grid-rows-[1fr_2fr] grid-cols-2 gap-4 p-6">
+            <!-- Top Left -->
+            <div class="row-span-1 col-span-1"></div>
+            <!-- Top Right -->
+            <div class="row-span-1 col-span-1"></div>
+            <!-- Bottom Left -->
+            <!-- Bottom Left -->
+            <div
+              class="row-span-1 col-span-1 flex flex-col justify-end items-start border-solid border-2 border-sky-500">
+              <div class="space-y-3 text-left w-full max-w-lg">
+                <!-- badge -->
+                <span class="badge-custom space-x-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-badge-alert">
+                    <path
+                      d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                    <line x1="12" x2="12" y1="8" y2="12" />
+                    <line x1="12" x2="12.01" y1="16" y2="16" />
+                  </svg>
+                  <p>Future Media Production</p>
+                </span>
+                <!-- title -->
+                <h2 class="text-white text-5xl font-semibold">Slide 1 Title</h2>
+                <!-- description -->
+                <p class="text-sm text-gray-400 dark:text-gray-500">Explore our student showcase featuring innovative
+                  multimedia presentations from Future Media Production. Join us for an immersive display of creativity,
+                  where emerging talents demonstrate their mastery of digital storytelling and production techniques.
+                </p>
               </div>
             </div>
 
-            <!-- Navigation -->
-            <div class="swiper-button-next text-primary-50"></div>
-            <div class="swiper-button-prev text-primary-50"></div>
 
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- Autoplay Progress -->
-            <div
-              class="autoplay-progress absolute bottom-4 right-4 flex items-center space-x-2"
-            >
-              <svg class="w-12 h-12" viewBox="0 0 48 48">
-                <circle
-                  class="stroke-primary-200 fill-transparent stroke-4"
-                  cx="24"
-                  cy="24"
-                  r="20"
-                  style="stroke-dasharray: 126; stroke-dashoffset: 126"
-                ></circle>
-              </svg>
-              <span class="text-primary-50 text-sm font-semibold"></span>
+            <!-- Bottom Right -->
+            <div class="row-span-1 col-span-1 flex justify-end items-end border-solid border-2 border-sky-500">
+              <button type="button" class="btn-custom">Learn More</button>
             </div>
           </div>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
-          <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-64 md:h-96"
-          ></div>
-          <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-64 md:h-96"
-          ></div>
-          <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-64 md:h-96"
-          ></div>
-          <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-64 md:h-96"
-          ></div>
 
-          <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-          ></div>
-          <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-          ></div>
-          <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-          ></div>
-          <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-          ></div>
         </div>
-        <div
-          class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4"
-        ></div>
-        <div class="grid grid-cols-2 gap-4">
-          <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-          ></div>
-          <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-          ></div>
-          <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-          ></div>
-          <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-          ></div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide bg-cover bg-center">
+          <div class="h-full bg-primary-900 rounded-lg grid grid-rows-[1fr_2fr] grid-cols-2 gap-4 p-6">
+            <!-- Top Left -->
+            <div class="row-span-1 col-span-1"></div>
+            <!-- Top Right -->
+            <div class="row-span-1 col-span-1"></div>
+            <!-- Bottom Left -->
+            <!-- Bottom Left -->
+            <div
+              class="row-span-1 col-span-1 flex flex-col justify-end items-start border-solid border-2 border-sky-500">
+              <div class="space-y-3 text-left w-full max-w-lg">
+                <!-- badge -->
+                <span class="badge-custom space-x-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-badge-alert">
+                    <path
+                      d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                    <line x1="12" x2="12" y1="8" y2="12" />
+                    <line x1="12" x2="12.01" y1="16" y2="16" />
+                  </svg>
+                  <p>Future Media Production</p>
+                </span>
+                <!-- title -->
+                <h2 class="text-white text-5xl font-semibold">Slide 1 Title</h2>
+                <!-- description -->
+                <p class="text-sm text-gray-400 dark:text-gray-500">Explore our student showcase featuring innovative
+                  multimedia presentations from Future Media Production. Join us for an immersive display of creativity,
+                  where emerging talents demonstrate their mastery of digital storytelling and production techniques.
+                </p>
+              </div>
+            </div>
+
+
+            <!-- Bottom Right -->
+            <div class="row-span-1 col-span-1 flex justify-end items-end border-solid border-2 border-sky-500">
+              <button type="button" class="btn-custom">Learn More</button>
+            </div>
+          </div>
+
         </div>
-      </main>
+        <!-- Slide 3 -->
+        <div class="swiper-slide bg-cover bg-center">
+          <div class="h-full bg-primary-900 rounded-lg grid grid-rows-[1fr_2fr] grid-cols-2 gap-4 p-6">
+            <!-- Top Left -->
+            <div class="row-span-1 col-span-1"></div>
+            <!-- Top Right -->
+            <div class="row-span-1 col-span-1"></div>
+            <!-- Bottom Left -->
+            <!-- Bottom Left -->
+            <div
+              class="row-span-1 col-span-1 flex flex-col justify-end items-start border-solid border-2 border-sky-500">
+              <div class="space-y-3 text-left w-full max-w-lg">
+                <!-- badge -->
+                <span class="badge-custom space-x-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-badge-alert">
+                    <path
+                      d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                    <line x1="12" x2="12" y1="8" y2="12" />
+                    <line x1="12" x2="12.01" y1="16" y2="16" />
+                  </svg>
+                  <p>Future Media Production</p>
+                </span>
+                <!-- title -->
+                <h2 class="text-white text-5xl font-semibold">Slide 1 Title</h2>
+                <!-- description -->
+                <p class="text-sm text-gray-400 dark:text-gray-500">Explore our student showcase featuring innovative
+                  multimedia presentations from Future Media Production. Join us for an immersive display of creativity,
+                  where emerging talents demonstrate their mastery of digital storytelling and production techniques.
+                </p>
+              </div>
+            </div>
+
+
+            <!-- Bottom Right -->
+            <div class="row-span-1 col-span-1 flex justify-end items-end border-solid border-2 border-sky-500">
+              <button type="button" class="btn-custom">Learn More</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination py-2"></div>
+
+      <!-- Autoplay Progress -->
+      <div class="autoplay-progress absolute right-2 top-2 flex items-center justify-center z-10 w-12 h-10">
+        <svg viewBox="0 0 48 48" class="w-full h-full">
+          <circle class="stroke-primary-200 fill-transparent stroke-4" cx="24" cy="24" r="20"
+            style="stroke-dasharray: 125.6; stroke-dashoffset: 125.6;"></circle>
+        </svg>
+        <span class="absolute font-semibold text-primary-50">5s</span>
+      </div>
     </div>
+
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+      <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-64 md:h-96"></div>
+      <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-64 md:h-96"></div>
+      <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-64 md:h-96"></div>
+      <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-64 md:h-96"></div>
+
+      <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
+      <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
+      <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
+      <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
+    </div>
+    <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4"></div>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
+      <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
+      <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
+      <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
+    </div>
+  </main>
+  </div>
 
     <!-- Flowbite CDNs -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
