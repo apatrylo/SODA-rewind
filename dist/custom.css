@@ -16,4 +16,38 @@
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
-  
+
+/*---- Swiper Js navigation arrows custom style  ----*/
+.swiper-button-next,.swiper-button-prev {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color,var(--swiper-theme-color))
+}
+
+.swiper-button-next:after,.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: 0.85rem;
+  text-transform: none!important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 0;
+}
+
+/* Scroll Bar Hide */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

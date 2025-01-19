@@ -208,7 +208,6 @@
       </ul>
     </div>
   </aside>
-  <!-- Content area -->
   <main class="antialiased bg-gray-200 dark:bg-gray-900 p-3 relative space-y-4">
     <!-- Header -->
     <div
@@ -264,9 +263,9 @@
           </div>
         </div>
         <!-- Header left -->
-        <div class="flex items-center space-x-2">
+        <div class="flex items-center space-x-2 flex-grow max-w-3xl">
           <!-- Search Input -->
-          <form class="max-w-xl w-full">
+          <form class="max-w-xl min-w-72 w-full">
             <div class="flex items-center">
               <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your
                 Email</label>
@@ -306,18 +305,16 @@
             </div>
           </form>
           <!-- Button Group -->
-          <div class="p-2 flex items-center space-x-2">
-
+          <div class="p-2 flex items-center space-x-1">
             <button type="button" aria-label="Next page"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                    d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
-                <span class="sr-only">Go to next page</span>
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                  d="M1 5h12m0 0L9 1m4 4L9 9" />
+              </svg>
+              <span class="sr-only">Go to next page</span>
             </button>
-
             <button type="button"
               class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
               <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -332,10 +329,10 @@
       </div>
     </div>
 
+    <!-- Content area -->
     <div
       class="p-4 md:ml-64 h-auto space-y-5 bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-xl sticky top-0 z-30">
-
-      <!-- Swiper -->
+      <!-- Swiper #1-->
       <div class="swiper mySwiper relative w-full h-[60vh] rounded-2xl overflow-hidden">
         <!-- Swiper Wrapper -->
         <div class="swiper-wrapper w-full h-full rounded-lg">
@@ -346,7 +343,6 @@
               <div class="row-span-1 col-span-1"></div>
               <!-- Top Right -->
               <div class="row-span-1 col-span-1"></div>
-              <!-- Bottom Left -->
               <!-- Bottom Left -->
               <div
                 class="row-span-1 col-span-1 flex flex-col justify-end items-start border-solid border-2 border-sky-500">
@@ -389,7 +385,6 @@
               <div class="row-span-1 col-span-1"></div>
               <!-- Top Right -->
               <div class="row-span-1 col-span-1"></div>
-              <!-- Bottom Left -->
               <!-- Bottom Left -->
               <div
                 class="row-span-1 col-span-1 flex flex-col justify-end items-start border-solid border-2 border-sky-500">
@@ -466,7 +461,6 @@
                 <button type="button" class="btn-custom">Learn More</button>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -484,17 +478,52 @@
       </div>
 
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
-        <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-64 md:h-96"></div>
-        <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-64 md:h-96"></div>
-        <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-64 md:h-96"></div>
-        <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-64 md:h-96"></div>
 
-        <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
-        <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
-        <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
-        <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
+      <!-- Grid -->
+      <!-- Swiper #2 -->
+      <div class="relative flex flex-row justify-between items-baseline">
+        <h3 class="text-white text-2xl font-normal">The quick brown fox</h3>
+        <!-- Navigation buttons -->
+        <div class="p-2 flex items-center space-x-6">
+          <button type="button" aria-label="Next page"
+            class="swiper-button-prev swiper-button-prev-2 text-white focus:ring-2 focus:outline-none focus:ring-gray-500 font-medium rounded-full text-sm text-center inline-flex items-center me-1">
+            <span class="sr-only">Go to next page</span>
+          </button>
+          <button type="button"
+            class="swiper-button-next swiper-button-next-2 text-white focus:ring-2 focus:outline-none focus:ring-gray-500 font-medium rounded-full text-sm text-center inline-flex items-center me-1">
+            <span class="sr-only">Icon description</span>
+          </button>
+        </div>
       </div>
+      <!-- categories -->
+      <div class="w-full flex flex-row gap-3 overflow-x-auto px-2 py-4 no-scrollbar touch-pan-x">
+        <button type="button" class="flex-none btn-custom btn-custom-category" data-state="inactive">Design for Planet Festival</button>
+        <button type="button" class="flex-none btn-custom btn-custom-category" data-state="active">Aah w2025 issue</button>
+        <button type="button" class="flex-none btn-custom btn-custom-category" data-state="inactive">Bunker Talk</button>
+        <button type="button" class="flex-none btn-custom btn-custom-category" data-state="inactive">Degree Show</button>
+        <button type="button" class="flex-none btn-custom btn-custom-category" data-state="inactive">MA Show</button>
+        <button type="button" class="flex-none btn-custom btn-custom-category" data-state="inactive">Unit x</button>
+        <button type="button" class="flex-none btn-custom btn-custom-category" data-state="inactive">Theatre</button>
+        <button type="button" class="flex-none btn-custom btn-custom-category" data-state="inactive">Facilities</button>
+      </div>
+      <!-- Swiper Wrapper -->
+      <div class="swiper mySwiper2 grid grid-cols-2 md:grid-cols-3 mb-4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-60">
+          </div>
+          <div class="swiper-slide border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-60">
+          </div>
+          <div class="swiper-slide border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-60">
+          </div>
+          <div class="swiper-slide border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-60">
+          </div>
+          <div class="swiper-slide border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-60">
+          </div>
+        </div>
+      </div>
+
+
+
       <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4"></div>
       <div class="grid grid-cols-2 gap-4">
         <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
@@ -502,6 +531,7 @@
         <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
         <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
       </div>
+
   </main>
   </div>
 
