@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="School of digital art straming platform">
+  <meta name="keywords" content="School of digital art straming platform">
+  <meta name="author" content="Andrii Patrylo">
+  <title>Your Page Title</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="custom.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <!-- Side bar -->
+  <aside id="default-sidebar"
+    class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full md:translate-x-0 p-3"
+    aria-label="Sidenav">
+    <div
+      class="overflow-y-auto py-5 px-3 h-full bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-xl">
+      <div class="flex justify-start pr-4 pl-4 pt-5 pb-7">
+        <a href="/dist/index.html" class="logo-container" aria-label="SODA Rewind platform logo">
+          <img src="/assets/brand/soda rewind logo.svg" alt="soda-rewind-platform-logo"
+            class="drop-shadow-[0_0_0.5rem_rgba(255,255,255,0.7)]">
+        </a>
+      </div>
+      <ul class="space-y-2">
+        <li>
+          <a href="/dist/index.html" aria-label="View overview page"
+            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-house">
+              <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+              <path
+                d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            </svg>
+            <span class="ml-3">Home</span>
+          </a>
+        </li>
+        <li>
+          <button type="button"
+            class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            aria-controls="dropdown-pages" data-collapse-toggle="dropdown-pages">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-origami">
+              <path d="M12 12V4a1 1 0 0 1 1-1h6.297a1 1 0 0 1 .651 1.759l-4.696 4.025" />
+              <path d="m12 21-7.414-7.414A2 2 0 0 1 4 12.172V6.415a1.002 1.002 0 0 1 1.707-.707L20 20.009" />
+              <path
+                d="m12.214 3.381 8.414 14.966a1 1 0 0 1-.167 1.199l-1.168 1.163a1 1 0 0 1-.706.291H6.351a1 1 0 0 1-.625-.219L3.25 18.8a1 1 0 0 1 .631-1.781l4.165.027" />
+            </svg>
+            <span class="flex-1 ml-3 text-left whitespace-nowrap">Animation</span>
+            <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <ul id="dropdown-pages" class="hidden py-2 space-y-2">
+            <li>
+              <a href="#"
+                class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">2D
+                Animation</a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">3D
+                Animation</a>
+            </li>
+            <li>
+              <a href="#" aria-label="View calendar page"
+                class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Motion
+                Graphics</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <button type="button"
+            class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            aria-controls="dropdown-sales" data-collapse-toggle="dropdown-sales">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-film">
+              <rect width="18" height="18" x="3" y="3" rx="2" />
+              <path d="M7 3v18" />
+              <path d="M3 7.5h4" />
+              <path d="M3 12h18" />
+              <path d="M3 16.5h4" />
+              <path d="M17 3v18" />
+              <path d="M17 7.5h4" />
+              <path d="M17 16.5h4" />
+            </svg>
+            <span class="flex-1 ml-3 text-left whitespace-nowrap">Films</span>
+            <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <ul id="dropdown-sales" class="hidden py-2 space-y-2">
+            <li>
+              <a href="#"
+                class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Short
+                Films</a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Documentary</a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Experimental
+                Cinema</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <button type="button"
+            class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            aria-controls="dropdown-authentication" data-collapse-toggle="dropdown-authentication">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-paintbrush">
+              <path d="m14.622 17.897-10.68-2.913" />
+              <path
+                d="M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z" />
+              <path
+                d="M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15" />
+            </svg>
+            <span class="flex-1 ml-3 text-left whitespace-nowrap">Digital Art</span>
+            <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <ul id="dropdown-authentication" class="hidden py-2 space-y-2">
+
+            <li>
+              <a href="#"
+                class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Graphic
+                Design</a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Illustration</a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Mixed
+                Media</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700">
+        <li>
+          <a href="#"
+            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-bell">
+              <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+              <path
+                d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
+            </svg>
+            <span class="flex-1 ml-3 whitespace-nowrap">Notifications</span>
+            <span
+              class="inline-flex justify-center items-center w-5 h-5 text-xs font-semibold rounded-full text-primary-800 bg-primary-100 dark:bg-primary-200 dark:text-primary-800">
+              6
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-settings">
+              <path
+                d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+            <span class="ml-3">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="/dist/colelctions.html"
+            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-square-library">
+              <rect width="18" height="18" x="3" y="3" rx="2" />
+              <path d="M7 7v10" />
+              <path d="M11 7v10" />
+              <path d="m15 7 2 10" />
+            </svg>
+            <span class="ml-3">Collections</span>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-life-buoy">
+              <circle cx="12" cy="12" r="10" />
+              <path d="m4.93 4.93 4.24 4.24" />
+              <path d="m14.83 9.17 4.24-4.24" />
+              <path d="m14.83 14.83 4.24 4.24" />
+              <path d="m9.17 14.83-4.24 4.24" />
+              <circle cx="12" cy="12" r="4" />
+            </svg>
+            <span class="ml-3">Help</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+
+  <main class="antialiased bg-gray-200 dark:bg-gray-900 p-3 relative space-y-4">
+    <!-- Header -->
+    <div
+      class="p-4 md:ml-64 h-auto space-y-5 bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-xl md:sticky top-1 z-50 shadow-md">
+      <div
+        class="flex flex-col md:flex-row items-start md:items-center justify-between overflow-hidden max-w-full space-y-2 md:space-y-0">
+        <!-- Avatar Header right -->
+        <div class="flex gap-4 max-w-xs md:order-last items-center pr-4">
+          <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar"
+            aria-controls="default-sidebar" type="button"
+            class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+            <span class="sr-only">Open sidebar</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" fill-rule="evenodd"
+                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+              </path>
+            </svg>
+          </button>
+          <img data-dropdown-toggle="userDropdown" alt="User profile avatar" data-dropdown-placement="bottom-start"
+            class="w-10 h-10 rounded-full cursor-pointer object-cover shadow-[0_0_0.5rem_rgba(255,255,255,0.5)]"
+            src="/assets/brand/IMG_7333.JPG">
+          <div class="font-normal dark:text-white truncate">
+            <div class="truncate">andi.patrylo@mmu.uk</div>
+
+            <div class="flex flex-row items-baseline space-x-1 text-sm text-gray-500 dark:text-gray-400">
+              <svg width="20" height="20" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="100%" height="100%" fill="url(#pattern0_22_1750)" />
+                <defs>
+                  <pattern id="pattern0_22_1750" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_22_1750" transform="scale(0.0138889)" />
+                  </pattern>
+                  <image id="image0_22_1750" width="100%" height="100%"
+                    xlink:href="data:image/png;base64,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" />
+                </defs>
+              </svg>
+              <p>Web and UXD</p>
+            </div>
+
+          </div>
+        </div>
+        <!-- Dropdown menu -->
+        <div id="userDropdown"
+          class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+          <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+            <div>Andrii Patrylo</div>
+            <div class="font-medium truncate">andi.patrylo@mmu.uk</div>
+          </div>
+          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="avatarButton">
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">My
+                Portfolio</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Account
+                Settings</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Submit
+                work</a>
+            </li>
+          </ul>
+          <div class="py-1">
+            <a href="/dist/sign_in.html"
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+              out</a>
+          </div>
+        </div>
+        <!-- Header left -->
+        <div
+          class="flex flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-2 flex-grow max-w-3xl">
+
+          <!-- Search Input -->
+          <form class="pl-2 max-w-xl min-w-72 w-full">
+            <div class="flex items-center">
+              <button id="dropdown-button" data-dropdown-toggle="dropdown"
+                class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-l-full hover:bg-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
+                type="button">All categories <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg></button>
+              <div id="dropdown"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+                  <li>
+                    <button type="button"
+                      class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Degree
+                      Shows</button>
+                  </li>
+                  <li>
+                    <button type="button"
+                      class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Student
+                      Exhibitions</button>
+                  </li>
+                  <li>
+                    <button type="button"
+                      class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Industry
+                      Showcases
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button"
+                      class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Festival
+                      Screenings
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="relative w-full">
+                <input type="search" id="search-dropdown"
+                  class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 border-gray-300 rounded-none rounded-r-full focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+                  placeholder="Explore SODA Creativity..." required />
+              </div>
+            </div>
+          </form>
+          <!-- Button Group -->
+          <div class="p-2 flex items-center space-x-1">
+            <button type="button" aria-label="Next page"
+              class="text-gray-900 dark:text-white bg-transparent hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-1 border border-gray-300 dark:border-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-sun-moon">
+                <path d="M12 8a2.83 2.83 0 0 0 4 4 4 4 0 1 1-4-4" />
+                <path d="M12 2v2" />
+                <path d="M12 20v2" />
+                <path d="m4.9 4.9 1.4 1.4" />
+                <path d="m17.7 17.7 1.4 1.4" />
+                <path d="M2 12h2" />
+                <path d="M20 12h2" />
+                <path d="m6.3 17.7-1.4 1.4" />
+                <path d="m19.1 4.9-1.4 1.4" />
+              </svg>
+            </button>
+            <button type="button" aria-label="Toggle high contrast mode"
+              class="text-gray-900 dark:text-white bg-transparent hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-1 border border-gray-300 dark:border-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-contrast">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 18a6 6 0 0 0 0-12v12z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content area -->
+    <div
+      class="p-4 md:ml-64 h-auto space-y-16 bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-xl sticky top-0 z-30">
+
+      <div class="space-y-4">
+        <!-- Grid -->
+        <div class="space-y-0 mt-4">
+          <div class="relative flex flex-row justify-between items-baseline">
+            <h3 class="text-gray-900 dark:text-white text-2xl font-normal">The quick brown fox</h3>
+            <!-- Navigation buttons -->
+            <div class="p-2 flex items-center space-x-6">
+              <button type="button" aria-label="Next page"
+                class="swiper-button-prev swiper-button-prev-2 text-gray-900 dark:text-white focus:ring-2 focus:outline-none focus:ring-gray-500 font-medium rounded-full text-sm text-center inline-flex items-center me-1">
+                <span class="sr-only">Go to next page</span>
+              </button>
+              <button type="button"
+                class="swiper-button-next swiper-button-next-2 text-gray-900 dark:text-white focus:ring-2 focus:outline-none focus:ring-gray-500 font-medium rounded-full text-sm text-center inline-flex items-center me-1">
+                <span class="sr-only">Icon description</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper #2 -->
+        <!-- Swiper Wrapper -->
+        <div class="swiper mySwiper2 grid grid-cols-2 md:grid-cols-3 mb-4">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/shattered, fragmented mirror.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Digital Art</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Memory Fragment</p>
+                  <p class="text-sm text-gray-300">A haunting, atmospheric exploration of the fragility of human memory.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/underwater world.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Animation</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Ocean of Stars</p>
+                  <p class="text-sm text-gray-300">A breathtaking, surreal landscape where the ocean meets the stars in
+                    a swirling, cosmic dance.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/co.jpg" alt="Background" class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Animation</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Quantum Flux</p>
+                  <p class="text-sm text-gray-300">A mesmerizing, surreal animation that explores the infinite
+                    possibilities of the quantum realm.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/neon-lit cityscape.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Digital Art</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Symphony of Light</p>
+                  <p class="text-sm text-gray-300">A mesmerizing, surreal animation that explores the infinite
+                    possibilities of light and color.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/swirl.jpg" alt="Background" class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Digital Art</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Spectral Bloom</p>
+                  <p class="text-sm text-gray-300">A vibrant, otherworldly flower blooms in the darkness, radiating an
+                    ethereal glow.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 6 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/starry landscape with glowing, ethereal orbs that.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>School of Digital Arts</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">The Abyssal Zone</p>
+                  <p class="text-sm text-gray-300">A haunting, atmospheric exploration of the fragility of human time
+                    and memory.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Grid -->
+        <div class="space-y-0 mt-4">
+          <div class="relative flex flex-row justify-between items-baseline">
+            <h3 class="text-gray-900 dark:text-white text-2xl font-normal">The quick brown fox</h3>
+            <!-- Navigation buttons -->
+            <div class="p-2 flex items-center space-x-6">
+              <button type="button" aria-label="Next page"
+                class="swiper-button-prev swiper-button-prev-3 text-gray-900 dark:text-white focus:ring-2 focus:outline-none focus:ring-gray-500 font-medium rounded-full text-sm text-center inline-flex items-center me-1">
+                <span class="sr-only">Go to next page</span>
+              </button>
+              <button type="button"
+                class="swiper-button-next swiper-button-next-3 text-gray-900 dark:text-white focus:ring-2 focus:outline-none focus:ring-gray-500 font-medium rounded-full text-sm text-center inline-flex items-center me-1">
+                <span class="sr-only">Icon description</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <!-- Swiper #2 -->
+        <!-- Swiper Wrapper -->
+        <div class="swiper mySwiper3 grid grid-cols-2 md:grid-cols-3 mb-4">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/delicate, swirling petals.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Future Media Production</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Aurora Bloom</p>
+                  <p class="text-sm text-gray-300">A vibrant, otherworldly flower blooms in the darkness, radiating an
+                    ethereal glow.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/empty space..jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Sound & Music</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Echoes in the Dark</p>
+                  <p class="text-sm text-gray-300">A haunting, atmospheric soundscape evokes the feeling of being lost
+                    in a vast, empty space.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/shattered clocks and gears.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Film</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Fractured Time</p>
+                  <p class="text-sm text-gray-300">A surreal, dreamlike world where time is broken and fragmented, with
+                    clocks and gears floating in mid-air.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/gears floati.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Digital Art</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Ghosts in the Machine</p>
+                  <p class="text-sm text-gray-300">A haunting, atmospheric exploration of the intersection of technology
+                    and the human experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/kaleidoscopic pattern.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Animation</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Infinity Loop</p>
+                  <p class="text-sm text-gray-300">A mesmerizing, surreal animation that explores the infinite
+                    possibilities of the human imagination.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 6 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/starry landscape with glowing, ethereal orbs that.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Sound & Music</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Lost in the Haze</p>
+                  <p class="text-sm text-gray-300">A dreamlike, atmospheric soundscape that evokes the feeling of being
+                    lost in a vast, empty space.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Grid -->
+        <div class="space-y-0 mt-4">
+          <div class="relative flex flex-row justify-between items-baseline">
+            <h3 class="text-gray-900 dark:text-white text-2xl font-normal">The quick brown fox</h3>
+            <!-- Navigation buttons -->
+            <div class="p-2 flex items-center space-x-6">
+              <button type="button" aria-label="Next page"
+                class="swiper-button-prev swiper-button-prev-4 text-gray-900 dark:text-white focus:ring-2 focus:outline-none focus:ring-gray-500 font-medium rounded-full text-sm text-center inline-flex items-center me-1">
+                <span class="sr-only">Go to next page</span>
+              </button>
+              <button type="button"
+                class="swiper-button-next swiper-button-next-4 text-gray-900 dark:text-white focus:ring-2 focus:outline-none focus:ring-gray-500 font-medium rounded-full text-sm text-center inline-flex items-center me-1">
+                <span class="sr-only">Icon description</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <!-- Swiper #2 -->
+        <!-- Swiper Wrapper -->
+        <div class="swiper mySwiper4 grid grid-cols-2 md:grid-cols-3 mb-4">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/delicate, swirling petals.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Future Media Production</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Aurora Bloom</p>
+                  <p class="text-sm text-gray-300">A vibrant, otherworldly flower blooms in the darkness, radiating an
+                    ethereal glow.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/empty space..jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Sound & Music</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Echoes in the Dark</p>
+                  <p class="text-sm text-gray-300">A haunting, atmospheric soundscape evokes the feeling of being lost
+                    in a vast, empty space.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/shattered clocks and gears.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Film</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Fractured Time</p>
+                  <p class="text-sm text-gray-300">A surreal, dreamlike world where time is broken and fragmented, with
+                    clocks and gears floating in mid-air.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/gears floati.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Digital Art</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Ghosts in the Machine</p>
+                  <p class="text-sm text-gray-300">A haunting, atmospheric exploration of the intersection of technology
+                    and the human experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/kaleidoscopic pattern.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Animation</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Infinity Loop</p>
+                  <p class="text-sm text-gray-300">A mesmerizing, surreal animation that explores the infinite
+                    possibilities of the human imagination.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 6 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/starry landscape with glowing, ethereal orbs that.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Sound & Music</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Lost in the Haze</p>
+                  <p class="text-sm text-gray-300">A dreamlike, atmospheric soundscape that evokes the feeling of being
+                    lost in a vast, empty space.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Grid -->
+        <div class="space-y-0 mt-4">
+          <div class="relative flex flex-row justify-between items-baseline">
+            <h3 class="text-gray-900 dark:text-white text-2xl font-normal">The quick brown fox</h3>
+            <!-- Navigation buttons -->
+            <div class="p-2 flex items-center space-x-6">
+              <button type="button" aria-label="Next page"
+                class="swiper-button-prev swiper-button-prev-2 text-gray-900 dark:text-white focus:ring-2 focus:outline-none focus:ring-gray-500 font-medium rounded-full text-sm text-center inline-flex items-center me-1">
+                <span class="sr-only">Go to next page</span>
+              </button>
+              <button type="button"
+                class="swiper-button-next swiper-button-next-2 text-gray-900 dark:text-white focus:ring-2 focus:outline-none focus:ring-gray-500 font-medium rounded-full text-sm text-center inline-flex items-center me-1">
+                <span class="sr-only">Icon description</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper #2 -->
+        <!-- Swiper Wrapper -->
+        <div class="swiper mySwiper2 grid grid-cols-2 md:grid-cols-3 mb-4">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/shattered, fragmented mirror.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Digital Art</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Memory Fragment</p>
+                  <p class="text-sm text-gray-300">A haunting, atmospheric exploration of the fragility of human memory.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/underwater world.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Animation</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Ocean of Stars</p>
+                  <p class="text-sm text-gray-300">A breathtaking, surreal landscape where the ocean meets the stars in
+                    a swirling, cosmic dance.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/co.jpg" alt="Background" class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Animation</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Quantum Flux</p>
+                  <p class="text-sm text-gray-300">A mesmerizing, surreal animation that explores the infinite
+                    possibilities of the quantum realm.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/neon-lit cityscape.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Digital Art</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Symphony of Light</p>
+                  <p class="text-sm text-gray-300">A mesmerizing, surreal animation that explores the infinite
+                    possibilities of light and color.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/swirl.jpg" alt="Background" class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>Digital Art</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">Spectral Bloom</p>
+                  <p class="text-sm text-gray-300">A vibrant, otherworldly flower blooms in the darkness, radiating an
+                    ethereal glow.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 6 -->
+            <div class="swiper-slide rounded-lg dark:border-gray-600 h-48 md:h-60 cursor-pointer">
+              <div class="grid grid-rows-2 h-full relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img src="/assets/content/starry landscape with glowing, ethereal orbs that.jpg" alt="Background"
+                    class="w-full h-full object-cover rounded-lg">
+                  <!-- Optional overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 rounded-lg"></div>
+                </div>
+                <!-- Content layers -->
+                <div class=" p-3 relative z-10">
+                  <span class="badge-custom space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-badge-alert">
+                      <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <p>School of Digital Arts</p>
+                  </span>
+                </div>
+                <div class=" p-3 relative z-10 flex flex-col justify-end">
+                  <p class="text-white text-lg">The Abyssal Zone</p>
+                  <p class="text-sm text-gray-300">A haunting, atmospheric exploration of the fragility of human time
+                    and memory.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+  </main>
+
+  <!-- Flowbite CDNs -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="custom.js"></script>
+</body>
+
+</html>

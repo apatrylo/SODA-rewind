@@ -1,7 +1,6 @@
-
 .badge-custom {
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(4px);
+  background-color: rgba(55, 65, 81, 0.5);
+  backdrop-filter: blur(2px);
   border-radius: 9999px;
   padding: 0.25rem 0.625rem;
   color: white;
@@ -11,7 +10,11 @@
   align-items: center;
   margin-right: 0.5rem;
   border: 1px solid rgba(156, 163, 175, 0.3);
-  background-image: linear-gradient(to right, rgba(156, 163, 175, 0.2), rgba(75, 85, 99, 0.2));
+  background-image: linear-gradient(
+    to right,
+    rgba(156, 163, 175, 0.3),
+    rgba(75, 85, 99, 0.2)
+  );
 }
 
 .badge-custom-purple {
@@ -26,10 +29,13 @@
   align-items: center;
   margin-right: 0.5rem;
   border: 1px solid rgba(168, 85, 247, 0.3);
-  background-image: linear-gradient(to right, rgba(168, 85, 247, 0.2), rgba(126, 34, 206, 0.2));
+  background-image: linear-gradient(
+    to right,
+    rgba(168, 85, 247, 0.2),
+    rgba(126, 34, 206, 0.2)
+  );
 }
-
-button.btn-custom {
+.btn-custom {
   color: rgb(17, 24, 39);
   background-color: rgb(243, 244, 246);
   border: 1px solid rgb(209, 213, 219);
@@ -41,25 +47,31 @@ button.btn-custom {
   transition: all 300ms;
 }
 
-button.btn-custom:hover {
+.btn-custom.is-secondary {
+  color: white;
+  background-color: transparent;
+  border: 1px solid rgb(107, 114, 128);
+}
+.btn-custom:hover {
   background-color: rgb(229, 231, 235);
   box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.2);
 }
 
-button.btn-custom:focus {
+.btn-custom.is-secondary:hover {
+  color: black;
+}
+.btn-custom:focus {
   outline: none;
   ring: 2px;
   ring-color: rgb(209, 213, 219);
 }
-
-button.btn-custom-category[data-state="active"] {
+.btn-custom-category[data-state="active"] {
   color: black;
   background-color: rgb(209, 213, 219);
   font-size: 0.75rem;
   padding: 0.5rem 1rem;
 }
-
-button.btn-custom-category[data-state="inactive"] {
+.btn-custom-category[data-state="inactive"] {
   color: rgb(107, 114, 128);
   background-color: transparent;
   font-size: 0.75rem;
@@ -67,53 +79,55 @@ button.btn-custom-category[data-state="inactive"] {
 }
 
 @media (prefers-color-scheme: dark) {
-  button.btn-custom-category[data-state="active"] {
+  .btn-custom-category[data-state="active"] {
     color: white;
     background-color: rgb(55, 65, 81);
   }
-  
-  button.btn-custom-category[data-state="inactive"] {
+
+  .btn-custom-category[data-state="inactive"] {
     color: rgb(243, 244, 246);
   }
 }
 
 /*---- Swiper Js pagination custom style  ----*/
 
-  /* Default bullet */
+/* Default bullet */
 .swiper-pagination-bullet {
-    background: rgb(230, 230, 230);
-    width: 9px;
-    height: 9px;
-    opacity: 0.5;
-  }
-  
-  /* Active bullet */
+  background: rgb(230, 230, 230);
+  width: 9px;
+  height: 9px;
+  opacity: 0.5;
+}
+
+/* Active bullet */
 .swiper-pagination-bullet-active {
-    background: rgb(255, 255, 255);
-    opacity: 1;
-    transform: scale(1.2);
-    transition: all 0.3s ease;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /*---- Swiper Js navigation arrows custom style  ----*/
-.swiper-button-next,.swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   position: relative;
   width: 2rem;
   height: 2rem;
-  margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
   z-index: 10;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--swiper-navigation-color,var(--swiper-theme-color))
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
 
-.swiper-button-next:after,.swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
   font-family: swiper-icons;
   font-size: 0.85rem;
-  text-transform: none!important;
+  text-transform: none !important;
   letter-spacing: 0;
   font-variant: initial;
   line-height: 0;
@@ -127,6 +141,6 @@ button.btn-custom-category[data-state="inactive"] {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

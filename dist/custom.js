@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-      delay: 5000,
+      delay: 8000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -89,11 +89,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
 // Popup video
 // Get DOM elements
-const videoThumbnail = document.getElementById('videoThumbnail');
+const videoThumbnail = document.getElementById("videoThumbnail");
 let videoContainer = null;
 
 // Your specific YouTube embed
@@ -106,62 +104,65 @@ const videoEmbed = `<iframe width="560" height="315" src="https://www.youtube.co
 
 // Create modal container
 function createModalContainer() {
-    const container = document.createElement('div');
-    container.style.position = 'fixed';
-    container.style.top = '0';
-    container.style.left = '0';
-    container.style.width = '100%';
-    container.style.height = '100%';
-    container.style.zIndex = '99999';
-    container.style.display = 'flex';
-    container.style.alignItems = 'center';
-    container.style.justifyContent = 'center';
-    
-    container.innerHTML = `
+  const container = document.createElement("div");
+  container.style.position = "fixed";
+  container.style.top = "0";
+  container.style.left = "0";
+  container.style.width = "100%";
+  container.style.height = "100%";
+  container.style.zIndex = "99999";
+  container.style.display = "flex";
+  container.style.alignItems = "center";
+  container.style.justifyContent = "center";
+
+  container.innerHTML = `
         <div style="position: fixed; inset: 0; background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(4px);"></div>
         <div style="position: relative; width: 90vw; max-width: 1152px; z-index: 100000;">
             <button style="position: absolute; right: 0; top: -40px; color: white; font-size: 24px; cursor: pointer;">×</button>
             <div style="aspect-ratio: 16/9; width: 100%;">
-                ${videoEmbed.replace('width="560" height="315"', 'style="width: 100%; height: 100%; border-radius: 8px;"')}
+                ${videoEmbed.replace(
+                  'width="560" height="315"',
+                  'style="width: 100%; height: 100%; border-radius: 8px;"'
+                )}
             </div>
         </div>
     `;
 
-    const closeBtn = container.querySelector('button');
-    const backdrop = container.querySelector('div');
-    
-    closeBtn.addEventListener('click', closeModalHandler);
-    backdrop.addEventListener('click', (e) => {
-        if (e.target === backdrop) closeModalHandler();
-    });
+  const closeBtn = container.querySelector("button");
+  const backdrop = container.querySelector("div");
 
-    return container;
+  closeBtn.addEventListener("click", closeModalHandler);
+  backdrop.addEventListener("click", (e) => {
+    if (e.target === backdrop) closeModalHandler();
+  });
+
+  return container;
 }
 
 // Open modal
 function openModal() {
-    if (!videoContainer) {
-        videoContainer = createModalContainer();
-    }
-    document.body.appendChild(videoContainer);
-    document.body.style.overflow = 'hidden';
+  if (!videoContainer) {
+    videoContainer = createModalContainer();
+  }
+  document.body.appendChild(videoContainer);
+  document.body.style.overflow = "hidden";
 }
 
 // Close modal
 function closeModalHandler() {
-    if (videoContainer) {
-        document.body.removeChild(videoContainer);
-        videoContainer = null;
-    }
-    document.body.style.overflow = '';
+  if (videoContainer) {
+    document.body.removeChild(videoContainer);
+    videoContainer = null;
+  }
+  document.body.style.overflow = "";
 }
 
 // Event listeners
-videoThumbnail.addEventListener('click', openModal);
+videoThumbnail.addEventListener("click", openModal);
 
 // Close on escape key
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && videoContainer) {
-        closeModalHandler();
-    }
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && videoContainer) {
+    closeModalHandler();
+  }
 });

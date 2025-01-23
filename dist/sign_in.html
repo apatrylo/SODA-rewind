@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="School of digital art straming platform">
+  <meta name="keywords" content="School of digital art straming platform">
+  <meta name="author" content="Andrii Patrylo">
+  <title>Your Page Title</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="custom.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- <style>
+    div {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  </style> -->
+</head>
+
+<body>
+  <!-- Side bar -->
+
+  <main class="antialiased dark:bg-gray-900 relative">
+
+    <!-- Content area -->
+    <div
+      class="flex flex-col md:flex-row items-center p-4 h-full md:h-screen space-y-4 md:space-y-0 md:space-x-4 sticky top-0 z-30">
+
+
+
+
+      <!-- Right side modal -->
+      <div class="flex justify-center w-full h-full">
+        <div class="w-full p-8 max-w-lg flex flex-col items-center gap-4">
+          <div class="p-2 bg-gray-100/20 rounded-lg shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)] border border-gray-700/30">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-scan-line">
+              <path d="M3 7V5a2 2 0 0 1 2-2h2" />
+              <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+              <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+              <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+              <path d="M7 12h10" />
+            </svg>
+          </div>
+          <div class="ml-3 text-center md:text-left">
+            <h3 class="text-gray-900 text-center dark:text-white text-2xl font-normal">Scan QR code</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Scan a QR code in-app to verify a device</p>
+          </div>
+
+          <div class="space-y-6 w-full text-center">
+            <div class="text-center w-full">
+              <div
+                class="border-2 dark:border-gray-700 w-48 h-48 mx-auto flex items-center justify-center rounded-xl overflow-clip drop-shadow-[0_0_0.5rem_rgba(255,255,255,0.3)]">
+                <img src="/assets/brand/adobe-express-qr-code (1).svg" alt="">
+              </div>
+              <div class="relative flex items-center justify-center w-full my-4 gap-4">
+                <div class="flex-grow border-t border-gray-700"></div>
+                <p class="text-gray-500 dark:text-gray-400">Or enter student email</p>
+                <div class="flex-grow border-t border-gray-700"></div>
+              </div>
+            </div>
+            <div class="relative">
+              <input type="text" id="floating_outlined"
+                class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                placeholder=" " />
+              <label for="floating_outlined"
+                class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-gray-600 peer-focus:dark:text-gray-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">
+                Student Email
+              </label>
+              <label for="floating_outlined"
+                class="absolute text-md text-gray-500 dark:text-gray-400 duration-300 -translate-y-0 top-3 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-gray-600 peer-focus:dark:text-gray-500 right-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-mail">
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </label>
+            </div>
+            <div class="flex flex-col text-center items-center space-y-2 mt-12">
+              <a href="/dist/index.html" class="w-full btn-custom">Continue</a>
+              <a href="#"
+                class="inline-flex items-center font-thin text-gray-500 underline dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">Troubles
+                Signing In?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Left side progress -->
+      <div
+        class="flex flex-col justify-between w-full md:w-1/3 p-4 h-full dark:bg-gray-800 dark:border-gray-700 rounded-xl lg:order-1">
+        <div class="px-6 flex flex-col space-y-4 md:space-y-8">
+          <div class="logo-container px-4 md:px-8 pt-4 pb-8" aria-label="SODA Rewind platform logo">
+            <img src="/assets/brand/soda rewind logo.svg" alt="SODA Rewind platform logo"
+              class="drop-shadow-[0_0_0.5rem_rgba(255,255,255,0.7)] w-full max-w-[300px] mx-auto">
+          </div>
+          <div class="flex items-center mb-3 md:mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-scan-face w-6 md:w-8 h-6 md:h-8">
+              <path d="M3 7V5a2 2 0 0 1 2-2h2" />
+              <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+              <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+              <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+              <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+              <path d="M9 9h.01" />
+              <path d="M15 9h.01" />
+            </svg>
+            <div class="ml-3">
+              <p class="font-semibold dark:text-white text-sm md:text-base">Identity Verification</p>
+              <p class="text-xs md:text-sm text-gray-500 dark:text-gray-400">Enter your student email or scan QR</p>
+            </div>
+          </div>
+          <div class="flex items-center mb-3 md:mb-6 opacity-50">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-rectangle-ellipsis w-6 md:w-8 h-6 md:h-8">
+              <rect width="20" height="12" x="2" y="6" rx="2" />
+              <path d="M12 12h.01" />
+              <path d="M17 12h.01" />
+              <path d="M7 12h.01" />
+            </svg>
+            <div class="ml-3">
+              <p class="font-semibold dark:text-white text-sm md:text-base">Password</p>
+              <p class="text-xs md:text-sm text-gray-500 dark:text-gray-400">Enter your password</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col text-center items-center space-y-4 mb-3 mt-8">
+          <button class="w-full btn-custom is-secondary">Sign Up today</button>
+          <p class="text-xs md:text-sm text-gray-500 dark:text-gray-400">Students within all faculties of the School of
+            Digital Art
+            MMU have special free access to the REWIND platform for the duration of their course.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </main>
+
+  <!-- Flowbite CDNs -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="custom.js"></script>
+</body>
+
+</html>
